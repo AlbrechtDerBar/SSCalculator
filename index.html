@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Fountain Calculator</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fountain">
+        <div class="offerings">
+            <div class="offering">
+                <label for="30">30</label>
+                <input type="number" name="30" id="30" min="36" max="60" class="offering_num">
+                <label for="30x">x</label>
+                <input type="number" name="30" id="30x" min="1.2" max="2" class="offering_mult" disabled>
+            </div>
+            <div class="offering">
+                <label for="300">300</label>
+                <input type="number" name="300" id="300" min="360" max="600" class="offering_num">
+                <label for="300x">x</label>
+                <input type="number" name="300x" id="300x" min="1.2" max="2" class="offering_mult" disabled>
+            </div>
+            <div class="offering">
+                <label for="3000">3,000</label>
+                <input type="number" name="3000" id="3000" min="3600" max="6000" class="offering_num">
+                <label for="3000x">x</label>
+                <input type="number" name="3000x" id="3000x" min="1.2" max="2" class="offering_mult" disabled>
+            </div>
+            <div class="offering">
+                <label for="30000">30,000</label>
+                <input type="number" name="30000" id="30000" min="36000" max="60000" class="offering_num">
+                <label for="30000x">x</label>
+                <input type="number" name="30000x" id="30000x" min="1.2" max="2" class="offering_mult" disabled>
+            </div>
+            <button onclick=clearInputs()>Clear Inputs</button>
+        </div>
+        <div class="results">
+            <label for="total">Total Soul Stones</label>
+            <input type="number" name="total" id="total" max="66660" disabled>
+            <label for="totalx">Total Multplier</label>
+            <input type="number" name="totalx" id="totalx" min="1.2" max="2" disabled>
+        </div>
+        <div class="lifetime">
+            <label for="lifetimeTotal">Lifetime Soul Stones</label>
+            <input type="number" name="lifetimeTotal" id="lifetimeTotal" disabled>
+            <label for="lifetimeTotalx">Lifetime Multplier</label>
+            <input type="number" name="lifetimeTotalx" id="lifetimeTotalx" min="1.2" max="2" disabled>
+        </div>
+    </div>
+    <button onclick=savePull()>Save Pull</button>
+    <button onclick=clearStorage()>clear Storage</button>
+    <div class="" id="message"></div>
+</body>
+</html>

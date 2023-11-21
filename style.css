@@ -1,0 +1,30 @@
+.fountain {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.offering {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.offerings {
+    width: 49%;
+}
+
+.success {
+    background-color: lightgreen;
+    border: 1px solid green;
+    padding: 5px;
+    width: 49%;
+    text-align: center;
+}
+
+.error {
+    background-color: coral;
+    border: 1px solid firebrick;
+    padding: 5px;
+    width: 49%;
+    text-align: center;
+}
